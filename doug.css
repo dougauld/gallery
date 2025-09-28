@@ -1,0 +1,160 @@
+/* Colours:
+#3a4ca9 Blue
+#F5AF00 Yellow
+#CE1126 Red
+#FDFCDE Forms light yellow background
+#DBD3C2 light brown for borders colours
+#DADBDD light grey for panel border
+#F8F8F8 lighetr grey for panel background
+#4D483C footer border-top
+----------------------------------------------- */
+/* Reset styles 
+----------------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0; text-align:left;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,th,var{font-style:normal;font-weight:normal;}
+caption,th{text-align:left;}
+/* end reset */
+
+/*
+----------------------------------------------- */
+/* 87.5% size gives you 14px from the 16px default */
+body {font-family: Arial, Helvetica, sans-serif; line-height: 1.1; background: #fff; color: #333; font-size: 75%;}
+
+a {color: #12416C; text-decoration: none;}
+
+/* Prevent large images from shrinking other items on the page */
+img {max-width: 100%;}
+
+/* Typography
+----------------------------------------------- */
+h1, h2, h3, h4 {font-size: 14px; text-shadow:rgba(255,255,255,0.2) 0 1px 1px; color:#CE1126; margin:10px 0 0; font-weight: normal;}
+h2 {font-size: 14px;}
+h3 {font-size: 12px;}
+h4 {font-size: 10px; margin-top:4px;}
+p {margin: 6px 6px 0;}
+h3+h4, h4+p {margin-top:0;}
+
+/* Form elements
+----------------------------------------------- */
+form {background: #FDFCDE; padding: 10px;}
+legend {font-weight: bold; margin-bottom: 6px;}
+input[type="text"] {width: 75%; font-size: 14px; padding: 2px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+input[type="submit"] {background: #3a4ca9 url(/images/overlay-button.png) repeat-x; padding: 3px 12px 4px; color: #fff; font-weight: bold; line-height: 1;
+  position: relative;  display: inline-block; top: -3px; cursor: pointer;
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5); -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  -webkit-text-shadow: 0 -1px 1px rgba(0,0,0,0.25); text-shadow: 0 -1px 1px rgba(0,0,0,0.25);}
+
+/* Lists
+----------------------------------------------- */
+ul li.arrow {background: #FFFFFF }
+ul li.arrow a {display: block; font-size: 14px; font-weight: bold; padding: 10px;}
+ul li.arrow span {display: block; font-size:12px; color: #666; margin-top:2px; font-weight: normal;}
+
+ul.menu {background: #fff; font: bold 16px; padding: 0; margin: 0;}
+ul.menu li {border-top: 1px solid #DBD3C2; list-style: none;}
+ul.menu li:first-child {border-top: none;}
+ul.menu li a {-webkit-tap-highlight-color: rgba(245,175,0,0.2);}
+
+/* Interactions: Buttons, loading...
+----------------------------------------------- */
+.button a {  margin: 0; padding: 0 3px; display:inline-block; width: auto; height: 30px; line-height: 30px;
+  overflow: hidden; text-overflow: ellipsis; text-decoration: none; white-space: nowrap;
+  font-size: 12px; font-weight: bold; color: #fff; text-shadow: rgba(0, 0, 0, 0.5) 0px -1px 0;
+  background: none; border-width: 0 5px; -webkit-border-image: url(../images/button.png) 0 5 0 5;}
+#progress { -webkit-border-radius: 10px; background: rgba(0,0,0,.7);  color: #fff;
+  font-size: 18px; font-weight: bold; text-align: center; line-height: 80px; margin: 0 auto;
+  position: absolute;  top: 120px;  left: 60px; width: 200px;  height: 80px; }
+
+/* Page elements
+----------------------------------------------- */
+#header     {width: 100%; background: #3a4ca9; height: 80px; position: relative;}
+#header  h1 {padding: 0; margin: 0; }
+#header a   {width: 145px; height: 50px; display: block; padding: 5px 0; background: #ce1126;}
+#header h2  {position: absolute; right: 100px; top: 20px; width: 200px; max-width: 200px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;
+            text-align: right; font-size: 20px; color: #fff; letter-spacing: 0.5px; margin:0; text-transform: uppercase; }
+#content    {word-wrap: break-word;}
+#main h2, #main h3, #main h4 {padding: 0 10px;}
+#main ul p  {margin-left: 0;} /* not needed again  so undoing the rule set in line 42 */
+#footer     {padding:10px; margin: 0 0 12px; border-top:2px solid #4D483C; font-size:12px;}
+
+/* Library search results page
+----------------------------------------------- */
+#main.library ul#results, #main.library p {padding: 10px;}
+#main.library ul#results {list-style: none;}
+#main.library ul#results li { margin-bottom: 10px; padding-bottom:10px; border-bottom: 1px solid #DBD3C2;}
+.pagination p {margin: 10px 0;}
+.pagination a {display: block-inline; padding: 0 5px;}
+
+
+/* Staff finder page
+----------------------------------------------- */
+.staff .fltright {display: none;}
+.staff .result_set_item {padding:10px; border-bottom:1px solid #DBD3C2;}
+.staff .result_set_item:last-child {border-bottom: 0;}
+#main.staff .result_set_item h3 {margin-top:0; padding-left:0;}
+.staff dt, .staff dd {display: block; line-height: 20px;}
+.staff dt { font-weight: bold; text-transform: capitalize;}
+.staff .result_set_item a.more, .staff .result_set_item a.less {padding-left:21px; background: url(../images/plus_minus.gif) left top no-repeat;}
+.staff .result_set_item a.less {background-position: left bottom;}
+.staff div.details {display:none;}
+.staff div.details_nojs_fallback {display:block;}
+
+/* Getting here page
+----------------------------------------------- */
+ul.getting li {padding: 0;}
+ul.getting li a {padding: 10px;}
+/* this is a submenu on the gettinghere page */
+ul.getting li span.maps {display: inline-block; padding: 10px 0 10px 10px; font-size: 16px;}
+ul.getting ul {margin:0; border-bottom:0; border-top: 1px dotted #DBD3C2;}
+ul.getting ul li {border-bottom: 1px dotted #DBD3C2; border-top:0;}
+ul.getting ul li:last-child {border-bottom:0;}
+ul.getting ul li.arrow a {padding: 10px 10px 10px 25px; }
+
+/* Individual news pages
+----------------------------------------------- */
+.news h1, .news h1+p {display: none;} /* eliminating the annoying empty p that causes extra space */
+.news input[type="submit"] {top:1px;}
+.latest-news ul {list-style: none; margin-left:0;}
+.latest-news li {border-bottom: 1px solid #DBD3C2; background: url(../images/chevron.gif)  right center no-repeat; position: relative;}
+.latest-news li:last-child {border-bottom:0;}
+.latest-news li a {display: block; padding: 10px 25px 30px 10px; -webkit-tap-highlight-color: rgba(245,175,0,0.2);}
+.latest-news li span.date {position: absolute; left: 10px; bottom:9px; display:block; color:#666;}
+.captionTable, .captionImage {width: 100%}
+#article-content h2, #article-content p {padding-left:0; margin-left:0;}
+#sharethis_0, .hideprint {display:none;}
+
+
+/* whatson / key events   */
+
+ul.event-list {margin-bottom: 1em;}
+ul.event-list li.first {display: none;}
+ul.event-list {list-style-type: none;}
+ul.event-list li {border-bottom: 1px solid #DBD3C2; background: url(../images/chevron.gif)  right center no-repeat; position: relative; margin-top: 0.5em; margin-bottom: 0.5em;}
+ul.event-list img {display: none;}
+ul.event-list li a {display: block; padding: 0px 0px 0px 0px; -webkit-tap-highlight-color: rgba(245,175,0,0.2);}
+ul.event-list li .event-date span.date {color:#666; float:left; margin-right: 5px; }
+ul.event-list li .event-time {color:#666; float:left;  }
+ul.event-list li .event-info {margin-bottom: 0.5em; clear:both; }
+ul.event-list li h3 {margin-top: 5px; margin-bottom: 5px; }
+
+
+#main.inner ul.event-list {margin-left: 0px;}
+
+
+/* show/page inner pages
+----------------------------------------------- */
+.inner {padding: 10px;}
+
+#main.inner h2,#main.inner h3, #main.inner h4 {padding-left: 0;}
+#main.inner p {margin-left: 0;}
+#main.inner ul, #main.inner ol {margin-left: 20px;}
+
+#main.inner p.buttons {overflow: hidden; margin-bottom: 10px;}
+#main.inner p.buttons a {display: block; border: 1px solid #3a4ca9; padding: 3px 5px; width: auto; float: left; margin-right: 10px;}
+
+/* Emergency page table styling
+----------------------------------------------- */
+table.tabledata_blue tr {border-bottom: 1px dotted #DBD3C2;}
+table.tabledata_blue td {width: 49%; padding: 20px 0;}
