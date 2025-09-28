@@ -83,7 +83,7 @@ ul.menu li a {-webkit-tap-highlight-color: rgba(245,175,0,0.2);}
 ----------------------------------------------- */
 #main.library ul#results, #main.library p {padding: 10px;}
 #main.library ul#results {list-style: none;}
-#main.library ul#results li { margin-bottom: 10px; padding-bottom:10px; border-bottom: 1px solid #DBD3C2;}
+#main.library ul#results li { margin-bottom: 10px; padding-bottom:10px; border-baottom: 1px solid #DBD3C2;}
 .pagination p {margin: 10px 0;}
 .pagination a {display: block-inline; padding: 0 5px;}
 
@@ -100,7 +100,7 @@ ul.menu li a {-webkit-tap-highlight-color: rgba(245,175,0,0.2);}
 .staff .result_set_item a.less {background-position: left bottom;}
 .staff div.details {display:none;}
 .staff div.details_nojs_fallback {display:block;}
-
+a
 /* Getting here page
 ----------------------------------------------- */
 ul.getting li {padding: 0;}
